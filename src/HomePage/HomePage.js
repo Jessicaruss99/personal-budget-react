@@ -1,4 +1,6 @@
 import React from 'react';
+import ChartJS from './ChartJS/ChartJS';
+import D3JS from './D3JS/D3JS';
 
 function HomePage() {
   return (
@@ -63,11 +65,22 @@ function HomePage() {
             </p>
         </article>
 
-        <article>
+        {/* <article>
             <h1>Chart</h1>
             <p>
                 <canvas id="myChart" width="400" height="400"></canvas>
             </p>
+        </article> */}
+
+        <article>
+            <h1>Pie Chart</h1>
+            <ChartJS/>
+
+        </article>
+
+        <article >
+            <h1>Donut Chart</h1>
+            <D3JS/>
         </article>
 
     </div>
